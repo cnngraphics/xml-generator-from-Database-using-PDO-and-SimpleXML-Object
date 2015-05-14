@@ -35,8 +35,15 @@ while ($row=$stmt->fetch(PDO::FETCH_ASSOC )){
 		$territoire->addChild('city', $city);
 		$territoire->addChild('zip', $zip);
 		
-			
+/**If you want to add other Node add another block that starts with a new object from the XML handler as follow	
+ * *according to your database table objects
+ * */
+// 		$user=$xml->addChild("User");
+// 		$user->addChild('admin',Mike'); 
+// 		$user->addChild('Age', 34);
+// 		$user->addChild('Nationality','haitian');	
 }
+
 
 //generate XML file
 
